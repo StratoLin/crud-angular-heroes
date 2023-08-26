@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="card text-center mb-5">
+    <div class="card-body">
+    </div>
+    <h2>Login de usuario</h2>
+    <form class="mb-5 " [formGroup]="formLogin" (ngSubmit)="onSubmit()">
+      <div class="mb-3">
+        <label class="form-label me-3">Email</label>
+        <input type="text" class="form-control-lg" formControlName="email">
+      </div>
+      <div class="mb-3">
+        <label class="form-label me-3">Password</label>
+        <input type="password" class="form-control-lg"
+          formControlName="password">
+      </div>
+      <input type="submit" value="Ingresar">
+      <i (click)="onClick()" class="fa-brands fa-google fa-2xl ms-5 text-info"></i>
+    </form>
+
+  </div>
+</div>
